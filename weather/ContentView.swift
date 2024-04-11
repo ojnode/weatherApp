@@ -11,6 +11,11 @@ import SwiftData
 struct ContentView: View {
     
     @State private var isNight = false
+    var weekDays: [String] = ["TUE",
+                    "WED",
+                    "THUR",
+                    "FRI",
+                    "SAT"]
     
     var body: some View {
         ZStack {
@@ -22,37 +27,9 @@ struct ContentView: View {
                                 temperature: 76)
                 
                 HStack (spacing: 20) {
-                    WeatherDayView(
-                        dayOfWeek: "TUE",
-                        imageName: "cloud.sun.fill",
-                        temperature:74
-                    )
-                    
-                    WeatherDayView(
-                        dayOfWeek: "WED",
-                        imageName: "sun.max.fill",
-                        temperature:95
-                    )
-                    
-                    WeatherDayView(
-                        dayOfWeek: "THUR",
-                        imageName: "cloud.rain.fill",
-                        temperature:65
-                    )
-                    
-                    WeatherDayView(
-                        dayOfWeek: "FRI",
-                        imageName: "snowflake",
-                        temperature:20
-                    )
-                    
-                    WeatherDayView(
-                        dayOfWeek: "SAT",
-                        imageName: "wind.snow",
-                        temperature:30
-                    )
-                    
-                    
+                    ForEach(weekDays, id: \.self) { day in
+                        WeatherDayView(dayOfWeek: day)
+                    }
                 }
                 
                 Spacer()
@@ -80,8 +57,6 @@ struct ContentView_Previews: PreviewProvider {
 struct WeatherDayView: View {
     
     var dayOfWeek: String
-    var imageName: String
-    var temperature: Int
     
     var body: some View {
         VStack {
@@ -89,13 +64,13 @@ struct WeatherDayView: View {
                 .font(.system(size: 20, weight: .light))
                 .foregroundColor(.white)
             
-            Image(systemName: imageName)
+            Image(systemName: eachDayWeather[dayOfWeek]!.0)
                 .renderingMode(.original)
                 .resizable()
                 .aspectRatio(contentMode: .fit)
                 .frame(width: 40, height:  40)
             
-            Text("\(temperature)°")
+            Text("\(eachDayWeather[dayOfWeek]!.1)°")
                 .font(.system(size: 25, weight: .medium))
                 .foregroundColor(.white)
         }
