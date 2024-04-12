@@ -17,6 +17,7 @@
 		A3227C0C2BB5206C00986C9A /* weatherUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3227C0B2BB5206C00986C9A /* weatherUITests.swift */; };
 		A3227C0E2BB5206C00986C9A /* weatherUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3227C0D2BB5206C00986C9A /* weatherUITestsLaunchTests.swift */; };
 		A335A59B2BC4BFFB00AE768F /* weatherButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A335A59A2BC4BFFB00AE768F /* weatherButton.swift */; };
+		A3BDE3642BC8AF3F009DC7AF /* WeatherApiCall.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3BDE3632BC8AF3E009DC7AF /* WeatherApiCall.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +51,7 @@
 		A3227C0B2BB5206C00986C9A /* weatherUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = weatherUITests.swift; sourceTree = "<group>"; };
 		A3227C0D2BB5206C00986C9A /* weatherUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = weatherUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		A335A59A2BC4BFFB00AE768F /* weatherButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = weatherButton.swift; sourceTree = "<group>"; };
+		A3BDE3632BC8AF3E009DC7AF /* WeatherApiCall.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherApiCall.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +109,7 @@
 				A3227BF22BB5206900986C9A /* Item.swift */,
 				A3227BF42BB5206B00986C9A /* Assets.xcassets */,
 				A3227BF62BB5206B00986C9A /* Preview Content */,
+				A3BDE3632BC8AF3E009DC7AF /* WeatherApiCall.swift */,
 			);
 			path = weather;
 			sourceTree = "<group>";
@@ -269,6 +272,7 @@
 				A3227BF12BB5206900986C9A /* ContentView.swift in Sources */,
 				A3005C042BC5E2C40012EDC5 /* dayDictionary.swift in Sources */,
 				A3227BF32BB5206900986C9A /* Item.swift in Sources */,
+				A3BDE3642BC8AF3F009DC7AF /* WeatherApiCall.swift in Sources */,
 				A335A59B2BC4BFFB00AE768F /* weatherButton.swift in Sources */,
 				A3227BEF2BB5206900986C9A /* weatherApp.swift in Sources */,
 			);
