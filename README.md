@@ -9,4 +9,10 @@
 <p> There is a limit to the amounbt of views that can exist within the ZStack, Vstack or Hstack, refactoring your stacks can help solve this. spacing is including as a view in swiftUI</p>
 
 <h3> for loop restrictions </h3>
-<p> Even after reading and finally understanding the difference beference between declarative syntax and implerative, my dumass tried using traditional for loop within the body of a view and spent hours making it work. Swift provides a ForEach method as a convenient way to iterate over a collection of data </p>
+<p> Even after reading and finally understanding the difference beference between declarative syntax and implerative, my dumbass tried using traditional for loop within the body of a view and spent hours trying to make it work. Swift provides a ForEach method as a convenient way to iterate over a collection of data in swiftUI </p>
+
+<h3> Guard </h3>
+<p> Guard keyword in swift is opposite of if in python, not exactly special but found it fascination</p>
+
+<h3>Weather Api</h3>
+<p> understood API calls in swift with basic JSON data, however finding working with the inbult swift coldable type on complex json results problematic, revisit later </p>
