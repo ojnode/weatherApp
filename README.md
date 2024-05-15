@@ -16,3 +16,5 @@
 
 <h3>Weather Api</h3>
 <p> understood API calls in swift with basic JSON data, however finding working with the inbult swift coldable type on complex json results problematic, revisit later </p>
+
+Migraine Level: Extreme
